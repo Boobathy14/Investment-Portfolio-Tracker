@@ -20,9 +20,13 @@ This system triggers daily updates once the market closes, facilitating a compre
 ## The workflow follows a structured Airflow Directed Acyclic Graph (DAG) process:
 
 Extract: Pulls data from Google Sheets and transforms it into a structured DataFrame, including transaction details, stock, and mutual fund buying and selling rates.
+
 Transform: Groups transaction data, calculates quantities and invested amounts, and employs SCD2 (Slowly Changing Dimension) to manage historical records. Additionally, it fetches real-time market data from the Google Finance API for up-to-date insights.
+
 Load: Transformed data is loaded into a separate Finance tracker sheet.
+
 Report: Automatic generation of daily reports using data from the Finance tracker.
+
 Send_mail: A final DAG component that ensures timely reports are sent to respective emails.
 
 ## Future Prospects
