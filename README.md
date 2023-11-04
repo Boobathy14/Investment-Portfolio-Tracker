@@ -6,10 +6,14 @@ I'm thrilled to introduce my latest project, an investment portfolio tracking sy
 ## Project Details
 To ensure accessibility and affordability, this project makes use of various free resources:
 
-### Data Storage: Google Sheets for secure and reliable data storage.
-### ETL Process: Airflow for seamless data extraction, transformation, and loading.
-### Reporting: Matplotlib library for generating comprehensive and insightful reports.
-### Communication: Configured personal Gmail for SMTP within Airflow for effective communication.
+### Data Storage:
+Google Sheets for secure and reliable data storage.
+### ETL Process: 
+Airflow for seamless data extraction, transformation, and loading.
+### Reporting: 
+Matplotlib library for generating comprehensive and insightful reports.
+### Communication: 
+Configured personal Gmail for SMTP within Airflow for effective communication.
 ### Workflow
 This system triggers daily updates once the market closes, facilitating a comprehensive monitoring process for both US and IND stock portfolios with just a single click.
 
